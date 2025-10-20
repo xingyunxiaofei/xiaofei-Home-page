@@ -50,44 +50,50 @@ function setupThemeToggle() {
     });
 }
 
-// 根据日出日落自动切换主题
+// 主题判定逻辑部分
 function setupAutoThemeSwitch() {
-    // 检查是否有用户手动设置的主题，如果有则不自动切换
-    if (localStorage.getItem('theme')) {
-        return;
-    }
-    
-    // 获取用户位置（使用IP定位）
+// 如果用户之前手动设置过主题，则不再自动判断(如果不使用可以把IF函数注释掉)
+//     if (localStorage.getItem('theme')) {
+//         return;
+//     }
+
+    // 获取用户位置（通过IP定位）
     fetch('https://ipapi.co/json/')
         .then(response => response.json())
         .then(data => {
             const { latitude, longitude } = data;
-            
+
             if (latitude && longitude) {
-                // 计算今天的日出日落时间
-                const today = new Date();
-                const times = SunCalc.getTimes(today, latitude, longitude);
-                
+                // 获取用户当前本地时间（而不是UTC时间）
+                const now = new Date();
+
+                // 使用 SunCalc 获取今天的日出和日落时间
+                const times = SunCalc.getTimes(now, latitude, longitude);
                 const sunrise = times.sunrise;
                 const sunset = times.sunset;
-                const now = new Date();
-                
-                // 判断当前时间是白天还是晚上
+
+                // 判断当前时间是否为白天
                 const isDayTime = now >= sunrise && now <= sunset;
                 const html = document.documentElement;
-                
-                // 应用相应的主题
+
+                // 设置主题
                 if (isDayTime) {
                     html.classList.remove('dark');
                     html.classList.add('light');
+                    localStorage.setItem('theme', 'light');
                 } else {
                     html.classList.remove('light');
                     html.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
                 }
+
+                console.log(`自动主题判断完成：${isDayTime ? '白天' : '夜晚'}`);
+            } else {
+                console.log('无法获取有效的地理位置信息');
             }
         })
         .catch(error => {
-            console.log('无法获取位置信息，使用默认主题');
+            console.log('IP定位失败，使用默认主题');
         });
 }
 
