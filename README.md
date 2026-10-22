@@ -12,41 +12,43 @@
 
   这个代码的主页为我自己的几个网站和一些朋友的网站
   
-  <img width="1531" height="599" alt="图片" src="https://github.com/user-attachments/assets/7ab6d297-b3d7-4c1b-b08e-46aee1297bf9" />
+<img width="2625" height="1730" alt="图片" src="https://github.com/user-attachments/assets/26540ee4-e850-47e9-81e9-9a2871ea2904" />
+
   
 ## 站长推荐
 
    这里是我收集的一些好用的网站
    
-   <img width="1634" height="900" alt="图片" src="https://github.com/user-attachments/assets/30c2291f-d619-4287-a766-e762095b42df" />
+<img width="2625" height="1730" alt="图片" src="https://github.com/user-attachments/assets/52e3c735-4109-42cb-bcbe-05d343095e7c" />
+
    
 ## 我的友人
 
    这里面是一个以.md格式文件的文章,大家拿到代码以后可以把自己的写好丢给ai让以.md格式书写,然后把内容复制到friends.md文档即可
-   
-   <img width="1300" height="1121" alt="图片" src="https://github.com/user-attachments/assets/145bda0d-1bef-44ed-9e1d-ad26f71d542f" />
+
+<img width="2625" height="1730" alt="图片" src="https://github.com/user-attachments/assets/8375816e-2c9a-474d-bf65-4720207fed31" />
+
 
 ## 自适应
 
    代码做了自适应处理,能完美兼容各种设备的运行
-   
-## QQ和微信遮罩
-
-   给qq和微信增加了遮罩功能,避免被QQ微信给拦截
-   
-## 夜间和白天主题
-
-  主题采用了根据ip日升月落来判定,自动启动白天或者夜间模式,也可以在右上角进行手动切换
   
 # 主页样式 黑夜
 
-<img width="1599" height="1145" alt="图片" src="https://github.com/user-attachments/assets/ed90daa7-5b4f-448f-b607-d69ff33943a1" />
+<img width="2625" height="1730" alt="图片" src="https://github.com/user-attachments/assets/45a755f0-a1d2-45c0-9289-cab8f867cb88" />
 
 # 主页样式  白天
 
-<img width="1709" height="1184" alt="图片" src="https://github.com/user-attachments/assets/45ec7a19-fdc9-425d-8faf-bb032e4d3a41" />
+<img width="2625" height="1730" alt="图片" src="https://github.com/user-attachments/assets/d2addfe7-ac75-4ef2-b9b0-7095e154631b" />
 
 # 更新日志
+2026-10-22 20:24
+1. 代码重构,使用了更现代的写法,更流畅
+2. 使用了随机颜色设定,会随机刷新颜色
+3. 压缩优化了代码长度,体积更小
+4. 解决了一些小bug
+5. 优化了css,界面更现代化
+
 2026-10-22 20:07
 1. 更新了一些在线api
 2. 更新了部分失效链接
