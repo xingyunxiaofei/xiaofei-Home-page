@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>随机帅哥视频 - 幸运小飞</title>
+    <meta name="description" content="随机刷新帅哥短视频，支持静音、自动连播。">
+    <meta name="theme-color" content="#111318">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="随机帅哥视频 - 幸运小飞">
+    <meta property="og:description" content="随机刷新帅哥短视频，支持静音、自动连播。">
+    <meta property="og:image" content="https://xiaofei.men/img/logo.jpg">
+    <meta property="og:url" content="https://xiaofei.men/me/sg.html">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <!-- 冷色随机主相（青 → 蓝 → 紫），强制深色沉浸模式 -->
+    <script>window.MD3_HUE = [168, 258]; window.MD3_FORCE = 'dark';</script>
+    <script src="../assets/theme.js"></script>
+    <link rel="stylesheet" href="../assets/video.css?v=2.2">
+</head>
+<body>
+    <header class="topbar">
+        <a class="back" href="../index.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            返回首页
+        </a>
+        <span class="name">随机帅哥</span>
+    </header>
+
+    <main class="stage">
+        <div class="screen" id="videoContainer">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <span>加载中...</span>
+            </div>
+            <div id="videoWrapper">
+                <video id="videoPlayer" playsinline controls controlslist="nodownload noremoteplayback noplaybackrate"></video>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn tonal" id="muteBtn" aria-pressed="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                <span>静音</span>
+            </button>
+            <button class="btn tonal" id="autoBtn" aria-pressed="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>
+                <span>自动连播</span>
+            </button>
+            <button class="btn" id="nextBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+                <span>下个视频</span>
+            </button>
+        </div>
+    </main>
+
+    <script>
+        window.VIDEO_CONFIG = {
+            apis: [
+                'https://api.yuafeng.cn/API/ly/sgxl.php',
+                'https://api.52vmy.cn/api/video/boy'
+            ]
+        };
+    </script>
+    <script src="../assets/video.js?v=2.2"></script>
+</body>
+</html>
