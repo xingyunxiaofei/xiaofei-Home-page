@@ -15,11 +15,11 @@
 
 ## 我的友人 <a id="我的友人"></a>
 
-- 江江:[https://江江.icu](https://江江.icu)
+- 江江:[https://江江.com](https://江江.com)
 
 - 软件小妹:[https://add.qianqian.club/](https://add.qianqian.club/)
 
-  >她的公众号:软件小妹、千千软件、软件小妹脚本、软件室
+  >她的公众号:**软件小妹、千千软件、软件小妹脚本、软件室**
 
 - 蚊子:[https://dash.140537.xyz/](https://dash.140537.xyz/)
 

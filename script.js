@@ -52,7 +52,7 @@ function setupThemeToggle() {
 
 // 主题判定逻辑部分
 function setupAutoThemeSwitch() {
-// 如果用户之前手动设置过主题，则不再自动判断(如果不使用可以把IF函数注释掉)
+// 如果用户之前手动设置过主题，则不再自动判断(如果不使用可以把这个if函数注释掉)
 //     if (localStorage.getItem('theme')) {
 //         return;
 //     }

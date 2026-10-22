@@ -13,15 +13,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小飞主页</title>
+    <title>幸运小飞</title>
     <!-- css引用,带版本号 -->
     <link rel="stylesheet" href="style.css?v=1.0.1">
     <!-- 网站图标 -->
     <link rel="icon" href="https://s21.ax1x.com/2025/10/09/pVHZ47d.png" type="image/jpeg">
     <!-- 引入Markdown转换库marked.js -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./marked.js"></script>
     <!-- 引入SunCalc库用于日出日落计算 -->
-    <script src="https://cdn.jsdelivr.net/npm/suncalc@1.9.0/suncalc.min.js"></script>
+    <script src="./suncalc.js"></script>
 </head>
 <body>
     <!-- 主题切换按钮 -->
@@ -84,12 +84,12 @@
     <!-- 粒子背景 -->
     <div id="particles-js"></div>
     <!-- 粒子特效 -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./particles.js"></script>
     <div class="container">
         <header>
             <div class="logo">
-                <img src="https://s21.ax1x.com/2025/08/24/pVshJuq.jpg" alt="小飞主页Logo">
-                <h1>小飞主页</h1>
+                <img src="https://s21.ax1x.com/2025/08/24/pVshJuq.jpg" alt="幸运小飞Logo">
+                <h1>幸运小飞</h1>
             </div>
             <h2>恭喜你发现了宝藏</h2>
             
@@ -151,15 +151,6 @@
                             <p class="link-description">我自己随便写的一些文章</p>
                         </div>
                     </div>
-                    <div class="link-card" data-link="http://xz.xiaofei.men/">
-                        <div class="link-icon">
-                            <div class="custom-favicon" style="background-color: #018507;">下载</div>
-                        </div>
-                        <div class="link-info">
-                            <span class="link-title">小飞下载</span>
-                            <p class="link-description">一个不定期收录软件的一个网站</p>
-                        </div>
-                    </div>
                     <div class="link-card" data-link="http://tv.xiaofei.men/">
                         <div class="link-icon">
                             <div class="custom-favicon" style="background-color: #f0ec039c;">影视</div>
@@ -169,7 +160,7 @@
                             <p class="link-description">有账号的可继续使用</p>
                         </div>
                     </div>
-                    <div class="link-card" data-link="http://sg.xiaofei.men/">
+                    <div class="link-card" data-link="http://xiaofei.men/sg">
                         <div class="link-icon">
                             <div class="custom-favicon" style="background-color: #f01004;">帅哥</div>
                         </div>
@@ -178,7 +169,7 @@
                             <p class="link-description">随机刷新帅哥视频</p>
                         </div>
                     </div>
-                    <div class="link-card" data-link="http://mn.xiaofei.men/">
+                    <div class="link-card" data-link="http://xiaofei.men/mv">
                         <div class="link-icon">
                             <div class="custom-favicon" style="background-color: #ff4d00;">美女</div>
                         </div>
@@ -190,7 +181,7 @@
                 </div>
                 <div class="icon-container">
                     <div class="icon-item">
-                        <a href="https://github.com/tanwanxiaofei" title="GitHub" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/xingyunxiaofei" title="GitHub" target="_blank" rel="noopener noreferrer">
                             <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-label="GitHub">
                                 <use xlink:href="#github"></use>
                             </svg>
@@ -227,7 +218,7 @@
 
                 <div class="info">
                     <p>建站时间 <span id="survival-time">计算中...</span></p>
-                    <p>© 2023 小飞主页 - 用心做好每一个网站</p>
+                    <p>© 2023 幸运小飞 - 用心做好每一个网站</p>
                     <p>我的邮箱：<span id="email" class="email-link">888@xiaofei.men</span></p>
                 </div>
             </div>
@@ -300,15 +291,6 @@
                             <div class="link-info">
                                 <span class="link-title">饭团影院</span>
                                 <p class="link-description">不怎么出名但是好几年了还是能用</p>
-                            </div>
-                        </div>
-                        <div class="link-card" data-link="https://dsxys.com/">
-                            <div class="link-icon">
-                                <div class="custom-favicon" style="background-color: #00b5d2;">师兄</div>
-                            </div>
-                            <div class="link-info">
-                                <span class="link-title">大师兄影院</span>
-                                <p class="link-description">好久好久的东西一直半死不活的挺出名还</p>
                             </div>
                         </div>
                         <div class="link-card" data-link="https://WWW.NCAT.APP">
@@ -386,6 +368,15 @@
                                 <p class="link-description">提供各种在线工具，包括文本处理、图片处理等</p>
                             </div>
                         </div>
+                        <div class="link-card" data-link="https://www.bestvideow.com/">
+                            <div class="link-icon">
+                                <div class="custom-favicon" style="background-color: #858503;">草料</div>
+                            </div>
+                            <div class="link-info">
+                                <span class="link-title">Best Video</span>
+                                <p class="link-description">免费的短视频解析网站</p>
+                            </div>
+                        </div>
                         <div class="link-card" data-link="https://greenvideo.cc/">
                             <div class="link-icon">
                                 <div class="custom-favicon" style="background-color: #F44336;">解析</div>
@@ -413,7 +404,7 @@
                                 <p class="link-description">在线文件格式转换工具，支持多种格式</p>
                             </div>
                         </div>
-                        <div class="link-card" data-link="https://www草料二维码.com/">
+                        <div class="link-card" data-link="https://cli.im/">
                             <div class="link-icon">
                                 <div class="custom-favicon" style="background-color: #858503;">草料</div>
                             </div>
@@ -496,7 +487,7 @@
                 <!-- 友情链接 -->
                 <div class="category-content" id="Friendurl-content">
                     <div class="links-container">
-                        <div class="link-card" data-link="http://江江.icu/">
+                        <div class="link-card" data-link="http://江江.com/">
                             <div class="link-icon">
                                 <div class="custom-favicon" style="background-color: #c17600;">江江</div>
                             </div>
@@ -585,6 +576,6 @@
         </symbol>
     </svg>
     <!-- js引用,带版本号 -->
-    <script src="script.js?v=1.0.1"></script>
+    <script src="script.js?v=1.0.3"></script>
 </body>
 </html>
