@@ -47,6 +47,9 @@
 <img width="1709" height="1184" alt="图片" src="https://github.com/user-attachments/assets/45ec7a19-fdc9-425d-8faf-bb032e4d3a41" />
 
 # 更新日志
+2026-10-22 20:07
+1. 更新了一些在线api
+2. 更新了部分失效链接
 2025-11-12 23:40
 1. 更新了部分颜色
 2. 更新了js和css的版本号
